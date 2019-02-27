@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--    
+        sets the required information for HTML
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+
+    <!-- 
+        Links the Boot Strap css style sheets
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- 
+        sets the title and starts the body
+     -->
+    <title>Cheeches Pizza</title>
 </head>
 <body>
+    <!-- 
+        sets the header and starts creating the form
+     -->
     <h1>Want some pizza</h1>
-    
+<div class="container">
+    <h2>Fill out for pizza</h2>
+        <div class="form-group">
+            <label for="name">First Name:</label>
+            <input type="text" name="fName" class="form-control" id="fName" placeholder="First Name">
+                <br>
+            <label for="name">Last Name:</label>
+            <input type="text" name="lName" class="form-control" id="lName" placeholder="First Name">
+                <br>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="pNum" class="form-control" id="phoneNum" placeHolder="(417) 555-7733">
+        </div>
+</div>
 </body>
 </html>
