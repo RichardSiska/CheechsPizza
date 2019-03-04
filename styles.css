@@ -35,3 +35,6 @@ body {
   margin: auto !important;
   float: right;
 }
+#home{
+  background-image: url("pizza.jpg");
+}
