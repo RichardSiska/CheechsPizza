@@ -14,7 +14,7 @@
     -->
     <title>GET YOUR PIZZA</title>
     <link href="styles.css" rel="stylesheet">
-    <script src="script.js"></script>
+    
 
 
     <!------ Include the above in your HEAD tag ---------->
@@ -22,6 +22,7 @@
 
 
 </head>
+<body>
     <div class="container">
            <table class="table table-striped">
               <tbody>
@@ -77,24 +78,42 @@
                                     <div class="col-md-8 inputGroupContainer">
                                        <div class="input-group">
                                           <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
-                                          <select class="selectpicker form-control">
-                                             <option>Here is where you add pizza options</option>
-                                                  <option> Pepperoni </option>
+                                          <select class="selectpicker form-control" id="pizzaOptions">
+                                                <!--These will be removed in order to push in onload with js -RS
+                                                -->
+                                                  <!-- <option> Pepperoni </option>
                                                   <option> Cheese </option>
                                                   <option> Pineapple </option>
-                                                  <option> ham </option>
+                                                  <option> ham </option> -->
                                              <!--   This is where you add more options  -->
                                           </select>
                                        </div>
                                     </div>
                                  </div>
                              <!-- Code to ask for zip code-->
-                             <div class="form-group">
+                             <!-- <div class="form-group">
                                 <label class="col-md-4 control-label">How many pizzas?</label>
                                 <div class="col-md-8 inputGroupContainer">
                                    <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input type="number"  id="numberOfPizza" min="1" max="100" class="form-control"></div>
                                 </div>
-                             </div>
+                             </div> -->
+                             <div class="form-group">
+                              <label class="col-md-4 control-label">How many pizzas?</label>
+                              <div class="col-md-8 inputGroupContainer">
+                                 <div class="input-group">
+                                    <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select class="selectpicker form-control" id="numberOptions">
+                                          <!--These will be removed in order to push in onload with js -RS
+                                          -->
+                                            <!-- <option> Pepperoni </option>
+                                            <option> Cheese </option>
+                                            <option> Pineapple </option>
+                                            <option> ham </option> -->
+                                       <!--   This is where you add more options  -->
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
                              <!-- Code to ask for country-->
                              <div class="form-group">
                                 <label class="col-md-4 control-label">Country</label>
@@ -124,5 +143,7 @@
               </tbody>
            </table>
         </div>
+        <script src="script.js"></script>
+      </body>
  </html>
         
