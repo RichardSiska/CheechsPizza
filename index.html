@@ -15,14 +15,15 @@
     -->
     <title>GET YOUR PIZZA</title>
     <link href="styles.css" rel="stylesheet">
-    <script src="script.js"></script>
+    
 
 
-    <!------ Include the above in your HEAD tag ---------->
+    <!-- Include the above in your HEAD tag -->
 
 
 
 </head>
+<body>
 <!-- Navagation Bar -->
 <div class="topnav">
    <a class="active" href="Home.html">Home</a>
@@ -42,13 +43,13 @@
               <tbody>
                  <tr>
                     <td colspan="1">
-                       <form class="well form-horizontal">
+                       <form class="well form-horizontal" action="summary.html">
                           <fieldset>
                               <!--  code to ask for full name-->
                              <div class="form-group">
                                 <label class="col-md-4 control-label">Full Name</label>
                                 <div class="col-md-8 inputGroupContainer">
-                                     <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" placeholder="Full Name" class="form-control" required="true" value="" type="text"></div>
+                                     <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input id="fullName" name="fullName" placeholder="Full Name" class="form-control" required value="" type="text"></div>
                                  </div> 
                               </div>
                              <!-- code to ask for address line-->
@@ -92,24 +93,42 @@
                                     <div class="col-md-8 inputGroupContainer">
                                        <div class="input-group">
                                           <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
-                                          <select class="selectpicker form-control">
-                                             <option>Here is where you add pizza options</option>
-                                                  <option> Pepperoni </option>
+                                          <select class="selectpicker form-control" id="pizzaOptions">
+                                                <!--These will be removed in order to push in onload with js -RS
+                                                -->
+                                                  <!-- <option> Pepperoni </option>
                                                   <option> Cheese </option>
                                                   <option> Pineapple </option>
-                                                  <option> ham </option>
+                                                  <option> ham </option> -->
                                              <!--   This is where you add more options  -->
                                           </select>
                                        </div>
                                     </div>
                                  </div>
                              <!-- Code to ask for zip code-->
-                             <div class="form-group">
+                             <!-- <div class="form-group">
                                 <label class="col-md-4 control-label">How many pizzas?</label>
                                 <div class="col-md-8 inputGroupContainer">
                                    <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span><input type="number"  id="numberOfPizza" min="1" max="100" class="form-control"></div>
                                 </div>
-                             </div>
+                             </div> -->
+                             <div class="form-group">
+                              <label class="col-md-4 control-label">How many pizzas?</label>
+                              <div class="col-md-8 inputGroupContainer">
+                                 <div class="input-group">
+                                    <span class="input-group-addon" style="max-width: 100%;"><i class="glyphicon glyphicon-list"></i></span>
+                                    <select class="selectpicker form-control" id="numberOptions">
+                                          <!--These will be removed in order to push in onload with js -RS
+                                          -->
+                                            <!-- <option> Pepperoni </option>
+                                            <option> Cheese </option>
+                                            <option> Pineapple </option>
+                                            <option> ham </option> -->
+                                       <!--   This is where you add more options  -->
+                                    </select>
+                                 </div>
+                              </div>
+                           </div>
                              <!-- Code to ask for country-->
                              <div class="form-group">
                                 <label class="col-md-4 control-label">Country</label>
@@ -127,9 +146,7 @@
                              <!--   code for the submit butotn  -->
                              <div class="form-group">
                                  <label class="col-md-4 control-label">
-                                     <div class="col-md-8 inputGroupContainer">
-                                            <button type="button" class="btn btn-light" id="submitButton">Submit Order</button>
-                                     </div>
+                                   <input type="submit" class="btn btn-light" id="submitButton" onclick="window.loaction.href = 'summary.html';" value="Submit Button" />
                                  </label>
                              </div>
                           </fieldset>
@@ -139,5 +156,13 @@
               </tbody>
            </table>
         </div>
+        <script src="script.js"></script>
+
+
+        <div class="summary">
+           
+
+        </div>
+      </body>
  </html>
         
