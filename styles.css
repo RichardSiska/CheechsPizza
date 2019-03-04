@@ -30,3 +30,8 @@ body {
   h2{
       text-align: center;
   }
+.center{
+  text-align: center !important;
+  margin: auto !important;
+  float: right;
+}
