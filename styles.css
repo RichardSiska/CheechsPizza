@@ -27,6 +27,15 @@ body {
     background-color: #4CAF50;
     color: white;
   }
-  h2{
+  h1{
       text-align: center;
+  }
+
+  /* STYLES FOR HOME.HTML */
+  article{
+      margin: 35px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  #home{
+      background-image: url("pizza.jpg");
   }
