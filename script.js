@@ -19,6 +19,9 @@ Date: 3/4/2019
 //Sets number of pizzas a customer can order
 var numPizzas = 10;
 
+//Submit button
+var subBtn = document.getElementById('submitButton');
+
 //Create pizza objects
 var cheese = {
 
@@ -66,6 +69,12 @@ var pizzaArray = [cheese, pineapple, ham, doubleCheese, chocolate];
 
 
 //Create a sale obj
+var sale = {
+    name: document.getElementById('fullName'),
+    numPizzas: 0,
+    
+
+}
 
 
 console.log("You got it!");
@@ -83,6 +92,17 @@ window.addEventListener("load", ()=>{
 
 
 
+
+});
+
+//Onclick event listener
+subBtn.addEventListener("click", ()=>{
+    
+    //Alert
+    
+
+    //Calculate sales
+    totalSale();
 
 });
 
@@ -114,6 +134,10 @@ function addItems(){
 }
 
 //Pizza orders determins how many are being ordered
+function totalSale(){
+
+    console.log(sale.name);
+}
 
 
 
