@@ -27,11 +27,14 @@ body {
     background-color: #4CAF50;
     color: white;
   }
-  h2{
+  h1{
       text-align: center;
   }
 .center{
   text-align: center !important;
   margin: auto !important;
   float: right;
+}
+#home{
+  background-image: url("pizza.jpg");
 }
